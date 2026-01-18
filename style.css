@@ -765,7 +765,8 @@ h2 {
 	/* --- TITRE PRINCIPAL : Descendu pour éviter le masquage par la navbar --- */
 	.titreprincipal {
 		top: 35%;
-		width: 90%;
+		width: 85%;
+		max-width: 100%;
 		left: 50%;
 		transform: translateX(-50%);
 		margin-top: 25px;
@@ -773,18 +774,20 @@ h2 {
 	
 	.titreprincipal p {
 		font-size: clamp(1rem, 5vw, 1.5rem);
-		line-height: 1.4;
+		line-height: 1.5;
 		letter-spacing: 1px;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
 	}
 	
 	/* --- BOUTON RÉSERVER : Centré et taille tactile optimale (min 44px) --- */
 	.reserve-btn {
-		font-size: clamp(0.9rem, 4vw, 1.2rem) !important;
-		padding: 0.875rem 1.25rem !important;
-		top: 55% !important;
+		font-size: clamp(1.1rem, 5vw, 1.3rem) !important;
+		padding: 0.875rem 1rem !important;
+		top: 50% !important;
 		left: 50% !important;
-		min-height: 2.75rem !important;
-		min-width: 10rem !important;
+		min-height: 3.2rem !important;
+		min-width: 12rem !important;
 		text-align: center !important;
 		transform: translateX(-50%) !important;
 	}
