@@ -561,6 +561,22 @@ h2 {
 	white-space: nowrap;
 }
 
+/* --- LIENS DE CONTACT : Email et Téléphone --- */
+.contact-link {
+	font-size: 18px;
+	color: #FFB6A3;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+}
+
+.contact-link:hover {
+	color: #fff;
+	border-bottom-color: #FFB6A3;
+	text-decoration: underline;
+}
+
 .footer-icons {
 	display: flex;
 	gap: 15px;
