@@ -826,6 +826,12 @@ h2 {
 		line-height: 1.4;
 	}
 	
+	/* --- TITRE EN PORTUGAIS : Réduit légèrement la police pour tenir sur une ligne --- */
+	h2.lang-pt {
+		font-size: clamp(0.95rem, 4.5vw, 1.3rem);
+		white-space: nowrap;
+	}
+	
 	/* --- SECTION CONTENT : Padding réduit --- */
 	.content-section {
 		padding: 1.5rem 1rem;

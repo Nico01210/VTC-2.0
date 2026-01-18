@@ -161,7 +161,15 @@ class LanguageManager {
 
     // Driver section
     const driverTitle = document.querySelector('.section-title');
-    if (driverTitle) driverTitle.textContent = lang.driver.title;
+    if (driverTitle) {
+      driverTitle.textContent = lang.driver.title;
+      // Ajouter la classe si portugais (pour forcer une ligne en mobile)
+      if (this.currentLang === 'pt') {
+        driverTitle.classList.add('lang-pt');
+      } else {
+        driverTitle.classList.remove('lang-pt');
+      }
+    }
 
     const driverName = document.querySelector('.driver-info h3');
     if (driverName) driverName.textContent = lang.driver.name;
